@@ -1,0 +1,94 @@
+
+.teaser {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &__darken, &__scanlines {
+    mix-blend-mode: multiply;
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__darken {
+    background: #000;
+    opacity: 0.4;
+    z-index: 8;
+  }
+
+  &__scanlines {
+    background-image: url(../images/teaser/pixel-2.png);
+    background-position: 50% 50%;
+    opacity: 0.3;
+    z-index: 9;
+  }
+
+  &__centered-text {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+    width: 80%;
+
+    &__title {
+      display: none;
+    }
+
+    &__logo {
+      max-width: 100%;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    &__tagline {
+      font-size: 30px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &:after {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    content: "";
+    width: 0;
+  }
+}
+
+
+/* break points */
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  p,
+  .footer {
+    font-size: 12px;
+  }
+}

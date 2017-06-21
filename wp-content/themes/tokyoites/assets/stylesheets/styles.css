@@ -1337,5 +1337,94 @@ pre {
   My custom styles:
   Add your scss files below to structure your project styles
 */
+html, body {
+  background-image: url(../images/teaser/tokyo.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #000000;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: hidden;
+  color: #ffffff;
+  line-height: 1;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
+  color: #999; }
+
+.teaser {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .teaser__darken, .teaser__scanlines {
+    mix-blend-mode: multiply;
+    position: absolute;
+    background: #000;
+    height: 100%;
+    width: 100%; }
+  .teaser__darken {
+    background: #000;
+    opacity: 0.4;
+    z-index: 8; }
+  .teaser__scanlines {
+    background-image: url(../images/teaser/pixel-2.png);
+    background-position: 50% 50%;
+    opacity: 0.3;
+    z-index: 9; }
+  .teaser__centered-text {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 10;
+    width: 80%; }
+    .teaser__centered-text__title {
+      display: none; }
+    .teaser__centered-text__logo {
+      max-width: 100%; }
+      .teaser__centered-text__logo path {
+        fill: #fff; }
+    .teaser__centered-text__tagline {
+      font-size: 30px;
+      padding: 0;
+      margin: 0; }
+  .teaser:after {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    content: "";
+    width: 0; }
+
+/* break points */
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 24px; } }
+
+@media only screen and (max-width: 620px) {
+  p {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 500px) {
+  p,
+  .footer {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 399px) {
+  p,
+  .footer {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=styles.css.map */

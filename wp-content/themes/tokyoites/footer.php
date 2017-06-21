@@ -10,12 +10,11 @@
 
 ?>
 
-		</section>
-		<footer class="footer">
-				<p>&copy; 2017 Tokyoites.tv</p>
-		</footer>
+<footer class="footer">
+		<p>&copy; 2017 Tokyoites.tv</p>
+</footer>
 
-	<?php do_action( 'foundationpress_layout_end' ); ?>
+<?php do_action( 'foundationpress_layout_end' ); ?>
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>

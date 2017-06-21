@@ -73,6 +73,7 @@
   My custom styles:
   Add your scss files below to structure your project styles
 */
+@import "global/variables";
 @import "global/layout";
 
 
@@ -84,3 +85,6 @@
 // Components
 
 // Templates
+@import "templates/teaser";
+
+
